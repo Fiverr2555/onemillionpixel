@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "t-monument-329419",
+  "private_key_id": "5a367e67de61e49a32d4315c5a76942e3465ddcb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8qtfYUds32xh6\n2SqLJUDt8c/vMXFrt6Gd0tBdY//35qyKmGCP03nLmt+GKha5ofVbsddIycDBlPxg\n26bg+vPbx8j+/DNNvLX7dE6amPbaOOFTLCj1touF4mRjYsmN2LUE9mxPiGYxgDkv\naBt6IkV16sVo/34jq8aAoN4APsdilvaIgtfAoS23c+Q23+4LFLTJDYATlkotpJEi\ndyyUnDxM+tI/Ms/1pwiYsIs2I59S18GwLJAIWM3OV3gieBBOpjRSUvQz8PwX10Nm\nGJUFylPB5palSh/VgRayAK9CjA50qSUQlNJevSHB6qz1lQO6PfsfZ6EwdLQwFPNL\nh8UQWrs7AgMBAAECggEAPR792Ts/kTteFWJoaXayr8NgkUWL0JFHfvkufqroYHfv\nGuFdmwqwUPlGA9F71jy1X7TgIVkXJL+u+XP/frBeMyvonk63Ei6aKDHYSzZV9oFp\n4geS53NxhPjAfAAjetwjXM22bheqv8uh+w03pZwXs6lQtgDbbRP3tXEoKp0r+/CL\n+qdqHbSKe+YkfKGFDOl8OM2S7u0adbF4PcVKoeq9Oo6k1D93WrSaMsdbHJc7EcGs\n9qgmezUPTCBxGC45GavzHPKAg/CnsbrO36Qv9XP8X9GRsVHpY5EsKnif0J5lLdu6\nwpWbY42Z0VP8h4Myu9pypdZow/KYUzKx1fZYPZrPVQKBgQD1rvm9KOtqV0dg0e9z\nBu9Rn8VN6NG+DwE2axRvlax5OOyVDNYvMMCS1r/Iq8xSfDPuVkZo4XnUugvDTT2k\n3WJqoZe0gYZci3TARe/WSpTXYtt+nRsw0PVTH3Mkj5f9bFJHWPu9SVwWCWELqXzK\nAMUcrNwzs2RI+IYbK1OnzoTXtQKBgQDElvYHUTIOZHoWQIT6rSgISTgKwcax6Rdi\nkBuZj+yYXGJofyirtx//816o6zH65sapynFhPzJVM+nt0kzoFSmdDfWF/8zCEIR7\nrkG4l6C0JVYodjOE4BbVP0MHV1HHwXjd8Ubi5eWEhr+QszVGc1x90JMmOVzWGQKK\nx9yZHO09LwKBgCE+gAScmN5W2Q282o3SDmgZGnWkX108Yomei7Fdq2zryveQORtB\nmY1FCcZ5mLhAnjZN7lEa0YV7d0QCG6lHW53aJ9EBBdFX/YBW9lEk3mcWtWS4lYlR\nfSC2TLpRw9tC4Q9OdyHx30gMFNmjIYOj/wgWS+WjDJrjJiJfBn7abxdRAoGARno0\nU6U5Q82jsyyIP/Ip4uaU785OdGOzHYO6UVA2qtyb7wh/RShOkYznR7mh3mgzmpVY\nFlv4qHEHEVqOdbl4hLSHa/Wrq3sOc+Sh7RJ2635jJ/hQOfe4V9TpK82TJQDoWvDv\nz9JJeTxxmueUVuBurTBEQLTZ4mtu7N//5uhm6MMCgYEAw3cIJYgtlwGYU1Cc7olK\npOVKdnBb7/U/5ab+wl9PuQWBd+YATFvjZiF6tgrEUeCt8RmfD8/k5TQujAQVJU6f\nXfYZel7NH3a5CLOUkM0oHP+we3m/3wxA7065ijwf/9iIcpNXbMvuJ6nZwAiJamCT\nqvc06/Za9DY7jv/j/WO5Kr0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "app1-353@t-monument-329419.iam.gserviceaccount.com",
+  "client_id": "100909979712883715363",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/app1-353%40t-monument-329419.iam.gserviceaccount.com"
+}

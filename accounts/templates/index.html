@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="row m-t-2">
+  <p></p>
+</div>
+<main id="main">
+  <center>
+    <table id="img01" width="1000px" height="1000px"
+      style="margin-top: 56px; border:1px white solid; background-image: url('media/img/out.png?{% now "
+      SHORT_DATETIME_FORMAT" %}');"></table>
+
+  </center>
+  <div id="divIntro" class="card" style="width:auto;display:none; width: 18rem;">
+
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      $('body').click(function (e) {
+        YT = window.scrollY + document.querySelector('#img01').getBoundingClientRect().top;
+        XR = window.scrollX + document.querySelector('#img01').getBoundingClientRect().right;
+        XL = window.scrollX + document.querySelector('#img01').getBoundingClientRect().left;
+        YB = window.scrollX + document.querySelector('#img01').getBoundingClientRect().bottom; // X
+
+        if (XR < e.pageX) {
+          $('#divIntro').hide()
+        } else if (XL > e.pageX) {
+          $('#divIntro').hide()
+        }
+        else if (YT > e.pageY) {
+          $('#divIntro').hide()
+        }
+        else if (YB < e.pageB) {
+          $('#divIntro').hide()
+        }
+      });
+      $('#img01').click(function (e) {
+        Y = e.pageY - (window.scrollY + document.querySelector('#img01').getBoundingClientRect().top);
+        X = e.pageX - (window.scrollX + document.querySelector('#img01').getBoundingClientRect().left) // X
+
+        '{% for b in blocks %}'
+        var SX = parseInt('{{ b.SX }}')
+        var SY = parseInt('{{ b.SY }}')
+        var EX = parseInt('{{ b.EX }}')
+        var EY = parseInt('{{ b.EY }}')
+        if (X > SX & X < EX & Y > SY & Y < EY) {
+          $('#divIntro').html('<div class="card-body">' +
+            '<h6 class="card-subtitle mb-2 text-muted">{{ b.block_text }}</h6>' +
+
+            '{% if b.website == "" or b.website == None %}{% else %}<a href="{{ b.website }}" class="card-text">{{ b.website }}</a><br>{% endif %}' +
+            ' {% if b.twitter == "" or b.twitter == None %}{% else %}<a href="https://twitter.com/{{ b.twitter }}" class="card-link"><i class="ri-twitter-fill"></i></a>{% endif %}' +
+            '{% if b.instagram == "" or b.instagram == None %}{% else %}<a href="https://instagram.com/{{ b.instagram }}" class="card-link"><i class="ri-instagram-fill"></i></a>{% endif %}' +
+            '{% if b.telegram == "" or b.telegram == None %}{% else %}<a href="https://telegram.com/{{ b.telegram }}" class="card-link"><i class="ri-telegram-fill"></i></a>{% endif %}' +
+            '{% if b.discord == "" or b.discord == None %}{% else %}<a href="https://discord.com/{{ b.discord }}" class="card-link"><i class="ri-discord-fill"></i></a>{% endif %}' +
+            ' </div>'
+          )
+            .css({
+              position: 'absolute', display: 'block',
+              left: e.pageX, top: e.pageY
+
+            });
+        }
+
+        '{% endfor %}'
+
+      });
+
+    });
+  </script>
+  {% endblock content %}
